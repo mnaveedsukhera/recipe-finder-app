@@ -1,0 +1,153 @@
+/* Global Body Styling */
+body {
+    background-color: #17324d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the App */
+.container {
+    max-width: 500px;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(143, 23, 23, 0.1);
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input and Button Styling */
+#searchInput, #categorySelect {
+    border-radius: 30px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 1px solid #eb6363;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+/* Button Styling */
+#searchButton {
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+#searchButton:hover {
+    background-color: #0056b3;
+}
+
+/* Dropdown and Input Area */
+.mb-4 {
+    margin-bottom: 20px;
+}
+
+/* Recipe Results Container */
+#recipeResults {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* Individual Recipe Card */
+#recipeResults .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+#recipeResults .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Recipe Link */
+.card-body a {
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card-body a:hover {
+    background-color: #218838;
+}
+
+/* Error or No Recipes Found */
+#recipeResults .no-results {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #ff4d4f;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .container {
+        padding: 15px;
+        margin-top: 30px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #recipeResults {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #searchButton {
+        width: 100%;
+    }
+
+    #recipeResults .card {
+        width: 100%;
+    }
+}
+
